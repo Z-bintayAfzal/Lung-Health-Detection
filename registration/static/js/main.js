@@ -69,11 +69,15 @@ Version:	1.1
 		/*====================================
 			Mobile Menu
 		======================================*/ 	
-		$('.menu').slicknav({
-			prependTo:".mobile-nav",
-			duration: 300,
-			closeOnClick:true,
+		
+		$(document).ready(function(){
+			$('.menu').slicknav({
+				prependTo: ".mobile-nav",
+				duration: 300,
+				closeOnClick: true
+			});
 		});
+		
 		
 		/*===============================
 			Hero Slider JS
