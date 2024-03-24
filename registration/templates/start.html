@@ -77,7 +77,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="../templates/home.html"><img src="/static/img/logo.jpg"></a>
+									<a href="{% url 'home' %}"><img src="/static/img/logo.jpg"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -97,14 +97,14 @@
 											<li><a href="#2">About us </a></li>
 											<li><a href="#1">Services </a></li>
 
-											<li><a href="#">User-Guide <i class="icofont-rounded-down"></i></a>
+											<li><a href="">User-Guide <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="../templates/user-guide.html">Guidance</a></li>
+													<li><a href="{% url 'userguide' %}">Guidance</a></li>
 												</ul>
 											</li>
 											<li><a href="#">Blogs<i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="../templates/blog-single.html">Lung Awareness</a></li>
+													<li><a href="{% url 'blog' %}">Lung Awareness</a></li>
 												</ul>
 											</li>
 										</ul>
@@ -114,11 +114,11 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="#" class="btn">Sign Up </a>
+									<a href="{% url 'signup' %} "class="btn">Sign Up </a>
 								</div>
                                 <div class="col-lg-2 col-12">
                                     <div class="get-quote">
-                                        <a href="Registration System/Registration System/registration/templates/login.html" class="btn">Log In</a>
+                                        <a href="{% url 'login' %}" class="btn">Log In</a>
                                     </div>
 							</div>
 						</div>
@@ -289,7 +289,7 @@
 								<div class="row">
 									<div class="col-lg-6 col-md-6 col-12">
 										<ul>
-											<li><a href="../templates/start.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+											<li><a href="{% url 'home' %}" ><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
 											<li><a href="#2"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
 											<li><a href="#1"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Services</a></li>
 											<li><a href="../templates/user-guide.html"><i class="fa fa-caret-right" aria-hidden="true"></i>User Guide</a></li>

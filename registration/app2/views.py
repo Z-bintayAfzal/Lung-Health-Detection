@@ -35,3 +35,7 @@ def LoginPage(request):
             return HttpResponse('Incorect usernamee or password!!')
         
     return render(request,'login.html')
+def BlogPage(request):
+    return render(request,'blog-single.html')
+def UserGuidePage(request):
+    return render(request,'user-guide.html')
