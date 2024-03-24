@@ -5,7 +5,7 @@ from django.contrib.auth import authenticate,login
 
 # Create your views here.
 def HomePage(request):
-    return render(request,'home.html')
+    return render(request,'start.html')
 def SignupPage(request):
     if request.method=='POST':
         uname=request.POST.get('username')
