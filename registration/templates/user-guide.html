@@ -74,7 +74,7 @@
 						<div class="col-12">
 							<h2>"System Usage Guidance"</h2>
 							<ul class="bread-list">
-								<li><a href="../templates/start.html">Home</a></li>
+								<li><a href="{% url 'home' %}">Home</a></li>
 								<li><i class="icofont-simple-right"></i></li>
 								<li class="active">Patient and Doctor Guidance</li>
 							</ul>
@@ -95,7 +95,7 @@
 								<div class="single-main">
 									<!-- News Head -->
 									<div class="news-head">
-										<img src="../static/img/9.jpg" alt="#">
+										<img src="../static/img/blog1.jpg" alt="#">
 									</div>
 									<!-- News Title -->
 									<h1 class="news-title"><a href="news-single.html">Follow These Steps: Utilize Our System</a></h1>
@@ -104,7 +104,7 @@
 									<div class="news-text">
 									<h2>Step: 1</h2>
 										
-										<p>Click on The <a href="../templates/start.html"><i href="../templates/start.html" class="icofont-home"></i> </a> Icon or Click on Image Below , You will Go To Our Main Page</p>
+										<p>Click on The <a href="{% url 'home' %}"><i href="{% url 'home' %}" class="icofont-home"></i> </a> Icon or Click on Image Below , You will Go To Our Main Page</p>
 
 
 
@@ -127,7 +127,7 @@
 												
 															<div class="news-head">
 															
-																<a href="../templates/start.html"><img src="../static/img/service.png" alt="#"></a>
+																<a href="{% url 'home' %}"><img src="../static/img/service.png" alt="#"></a>
 
 															</div>
 
@@ -147,7 +147,7 @@
 																		<p>If You Want To Know About Lung Cancer And Pneumonia, Click on Blog Section or  Click On Image Below</p>
 																		<div class="image-gallery">
 																			<div class="news-head">
-																				<a href="../templates/blog-single.html"><img src="../static/img/blogclick.png" alt="Our Service"></a>
+																				<a href="{% url 'blog' %}"><img src="../static/img/blogclick.png" alt="Our Service"></a>
 																			</div>
 																		
 																			<div class="news-text">
@@ -155,7 +155,7 @@
 																						<p>If You Want To Know More About Us, Click on About Section or  Click On Image Below</p>
 																						<div class="image-gallery">
 																							<div class="news-head">
-																								<a href="../templates/start.html"><img src="../static/img/aboutclick.png" alt="Our Service"></a>
+																								<a href="{% url 'home' %}"><img src="../static/img/aboutclick.png" alt="Our Service"></a>
 																							</div>
 												
 																							
@@ -164,7 +164,7 @@
 																										<p>Still have confsuion We Are Here To Help You , Again You Can Go To The User Guidence Section/p>
 																										<div class="image-gallery">
 																											<div class="news-head">
-																												<a href="../templates/user-guide.html"><img src="../static/img/guideclick.png" alt="Our Service"></a>
+																												<a href="{% url 'userguide' %}"><img src="../static/img/guideclick.png" alt="Our Service"></a>
 																											</div>
 										<blockquote class="overlay">
 											<p>Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commodo et, sodales</p>					
