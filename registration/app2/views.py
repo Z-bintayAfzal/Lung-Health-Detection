@@ -16,7 +16,7 @@ def SignupPage(request):
         if password1!=password2:
             return HttpResponse('Your password is not same')
         else:                    
-            my_user=User.objects.create_user(uname,email,password1)
+            my_user =User.objects.create_user(uname,email,password1)
             my_user.save()
             return redirect('login')
         
